@@ -1,0 +1,70 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f4f5fb;
+  color: #1c1c28;
+}
+
+.container { max-width: 560px; margin: 0 auto; padding: 24px 16px 64px; }
+.logo { color: #5b4bdb; letter-spacing: -1px; margin: 0 0 16px; }
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+h2 { margin: 0 0 8px; font-size: 1.25rem; }
+
+label { display: block; margin: 16px 0 6px; font-weight: 600; font-size: 0.9rem; }
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d5d7e3;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  color: inherit;
+}
+
+button {
+  background: #5b4bdb;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 16px;
+}
+button:disabled { opacity: 0.45; cursor: not-allowed; }
+button.secondary { background: #eceafc; color: #5b4bdb; margin-top: 0; white-space: nowrap; }
+
+.row { display: flex; gap: 8px; align-items: center; }
+.spread { justify-content: space-between; }
+.muted { color: #6b6e85; }
+.small { font-size: 0.85rem; }
+.error { color: #c62828; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.chip {
+  background: #eceafc; color: #3d31a8; border-radius: 999px;
+  padding: 6px 6px 6px 12px; display: inline-flex; align-items: center; gap: 4px;
+}
+.chip-x { background: none; color: #3d31a8; margin: 0; padding: 0 6px; font-size: 1.1rem; }
+
+.day {
+  background: #fff; color: #1c1c28; border: 2px solid #d5d7e3; margin: 0;
+}
+.day.on { background: #5b4bdb; color: #fff; border-color: #5b4bdb; }
+
+.best {
+  background: #e7f7ec; color: #1b5e20; padding: 12px; border-radius: 10px; margin: 12px 0;
+}
+.result { margin: 14px 0; }
+.bar { height: 10px; background: #eceafc; border-radius: 6px; margin: 6px 0; overflow: hidden; }
+.bar-fill { height: 100%; background: #5b4bdb; transition: width 0.3s; }
